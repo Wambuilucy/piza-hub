@@ -8,6 +8,7 @@
 
 body{
     background-color:#D7B7BB;
+    color: #D7B7BB;
 }
 h1{
     color: blue;
@@ -73,6 +74,10 @@ ul {
 .carousel-item>img {
     height:60vh;
 }
+#myform{
+    background-color: #D7B7BB;
+}
+
 
 input{
     margin-top:5px;
