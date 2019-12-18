@@ -189,7 +189,7 @@ jQuery.fn = jQuery.prototype = {
 	pushStack: function( elems ) {
 
 		// Build a new jQuery matched element set
-		var ret = jQuery.merge( this.constructor(), elems );
+		var ret = jQuery.piza-hub( this.constructor(), elems );
 
 		// Add the old object onto the stack (as a reference)
 		ret.prevObject = this;
@@ -393,7 +393,7 @@ jQuery.extend( {
 
 		if ( arr != null ) {
 			if ( isArrayLike( Object( arr ) ) ) {
-				jQuery.merge( ret,
+				jQuery.piza-hub( ret,
 					typeof arr === "string" ?
 					[ arr ] : arr
 				);
@@ -411,8 +411,8 @@ jQuery.extend( {
 
 	// Support: Android <=4.0 only, PhantomJS 1 only
 	// push.apply(_, arraylike) throws on ancient WebKit
-	merge: function( first, second ) {
-		var len = +second.length,
+	piza-hub= ( first, second )=> {
+		var len = +second.length,d
 			j = 0,
 			i = first.length;
 
@@ -425,7 +425,7 @@ jQuery.extend( {
 		return first;
 	},
 
-	grep: function( elems, callback, invert ) {
+	grep= ( elems, callback, invert )=> {
 		var callbackInverse,
 			matches = [],
 			i = 0,
@@ -445,7 +445,7 @@ jQuery.extend( {
 	},
 
 	// arg is for internal usage only
-	map: function( elems, callback, arg ) {
+	map=( elems, callback, arg )=> {
 		var length, value,
 			i = 0,
 			ret = [];
@@ -490,7 +490,7 @@ if ( typeof Symbol === "function" ) {
 
 // Populate the class2type map
 jQuery.each( "Boolean Number String Function Array Date RegExp Object Error Symbol".split( " " ),
-function( i, name ) {
+=( i, name )=> {
 	class2type[ "[object " + name + "]" ] = name.toLowerCase();
 } );
 
