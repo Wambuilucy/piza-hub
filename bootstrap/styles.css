@@ -1,114 +1,98 @@
-   
-*{background-color: #D7B7BB;}
- .carousel-caption{ 
-    font-family: 'Amaranth', sans-serif;
+* .corousel-caption{
     font-size:24px;
-    
+}
+body{
+    background-color:white;
 }
 
+ .carousel-caption{ 
+ font-family: 'Amaranth', sans-serif;
+ font-size:24px;
+ 
+}
 body{
-    background-color:#f5d6d9;
-    color: #D7B7BB;
+ background-color:white;
 }
 h1{
-    color: blue;
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
-    font-size: 50px;
+ color: black;
+ text-align: center;
+ font-family: 'Dancing Script', cursive;
+ font-size: 50px;
 }
-
 ul {
-    list-style-type: none;
-    margin: 5px;
-    padding: 5px;
-    overflow: hidden;
-    background-color: #D7B7BB;
-    width:100%;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color:#1AC8DB;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .about-content{
-      text-align: center;
-      font-family: 'Grenze', serif;
-      font-size: 30px;
-      
-  }
+ list-style-type: none;
+ margin: 5px;
+ padding: 5px;
+ overflow: hidden;
+ background-color: black;
+ width:100%;
+}
 
-  #about{
-      background-color: #D7B7BB;
-  }
+li {
+ float: left;
+}
 
-  .about-content h2{
-    margin:5px;
-    font-family: 'Dancing Script', cursive;
-    padding-bottom:10px;
-    padding-top:20px;
-  }
+li a {
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
 
-  #order h2{
-      text-align: center;
-      font-family: 'Grenze', serif;
-      padding-top: 20px;
-  }
-
-  #order img{
-      width:100%;
-      height:250px;
-  }
-
-  #order{
-      background-color: #A3C1D5;
-  }
-
+.about-content{
+   text-align: center;
+   font-family: 'Grenze', serif;
+   font-size: 30px;
+   
+}
+#about{
+   background-color: #D7B7BB;
+}
+.about-content h2{
+ margin:5px;
+ font-family: 'Dancing Script', cursive;
+ padding-bottom:10px;
+ padding-top:20px;
+}
+#order h2{
+   text-align: center;
+   font-family: 'Grenze', serif;
+   padding-top: 20px;
+}
+#order img{
+   width:100%;
+   height:250px;
+}
+#order{
+   background-color: #A3C1D5;
+}
 .carousel-item>img {
-    height:60vh;
+ height:60vh;
 }
-#myform{
-    background-color: #D7B7BB;
-}
-
-
 input{
-    margin-top:5px;
-    width:100%;
-    font-size:30px;
+ margin-top:5px;
+ width:100%;
+ font-size:30px;
 }
-
 option{
-    font-size:25px;
+ font-size:25px;
 }
-
 #myForm{
-    padding-top:20px;
-    font-family: 'Grenze', serif;
-    font-size: 30px;
-    display: inline-block;
-    width:100%;
+ padding-top:20px;
+ font-family: 'Grenze', serif;
+ font-size: 30px;
+ display: inline-block;
+ width:100%;
 }
-
 #myForm h2{
-    text-align:center;
+ text-align:center;
 }
-
 .cont{
-    background-color:#b0adac;;
+ background-color:#b0adac;
 }
-
-
-
 @media screen and (max-width:800px) {
-    .left, .main, .right {
-      width:100%; /* The width is 100%, when the viewport is 800px or smaller */
-    }
-  }
+ .left, .main, .right {
+   width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+ }
+}
