@@ -1,4 +1,3 @@
-
 /*!
  * jQuery JavaScript Library v3.4.1
  * https://jquery.com/
@@ -189,7 +188,7 @@ jQuery.fn = jQuery.prototype = {
 	pushStack: function( elems ) {
 
 		// Build a new jQuery matched element set
-		var ret = jQuery.piza-hub( this.constructor(), elems );
+		var ret = jQuery.merge( this.constructor(), elems );
 
 		// Add the old object onto the stack (as a reference)
 		ret.prevObject = this;
@@ -393,7 +392,7 @@ jQuery.extend( {
 
 		if ( arr != null ) {
 			if ( isArrayLike( Object( arr ) ) ) {
-				jQuery.piza-hub( ret,
+				jQuery.merge( ret,
 					typeof arr === "string" ?
 					[ arr ] : arr
 				);
@@ -411,8 +410,8 @@ jQuery.extend( {
 
 	// Support: Android <=4.0 only, PhantomJS 1 only
 	// push.apply(_, arraylike) throws on ancient WebKit
-	piza-hub= ( first, second )=> {
-		var len = +second.length,d
+	merge: function( first, second ) {
+		var len = +second.length,
 			j = 0,
 			i = first.length;
 
@@ -425,7 +424,7 @@ jQuery.extend( {
 		return first;
 	},
 
-	grep= ( elems, callback, invert )=> {
+	grep: function( elems, callback, invert ) {
 		var callbackInverse,
 			matches = [],
 			i = 0,
@@ -445,7 +444,7 @@ jQuery.extend( {
 	},
 
 	// arg is for internal usage only
-	map=( elems, callback, arg )=> {
+	map: function( elems, callback, arg ) {
 		var length, value,
 			i = 0,
 			ret = [];
@@ -490,7 +489,7 @@ if ( typeof Symbol === "function" ) {
 
 // Populate the class2type map
 jQuery.each( "Boolean Number String Function Array Date RegExp Object Error Symbol".split( " " ),
-=( i, name )=> {
+function( i, name ) {
 	class2type[ "[object " + name + "]" ] = name.toLowerCase();
 } );
 
@@ -10597,15 +10596,3 @@ if ( !noGlobal ) {
 
 return jQuery;
 } );
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
